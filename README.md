@@ -1,17 +1,27 @@
-# my_week
+# My Week
 
-A new Flutter project.
+A cloud-connected class timetable app built with Flutter and Firebase.
 
-## Getting Started
+## Features
+- **Cloud Authentication:** Secure user login and account creation using Firebase Auth.
+- **Live Firestore Database:** Timetable data is saved to the cloud and updates in real-time.
+- **Private Data:** Security rules ensure users can only see their own schedules.
+- **Clash Detection:** Alerts you in red if two courses overlap.
+- **Time Calculations:** Automatically calculates daily and weekly totals.
+- **Full CRUD:** Add, edit, and delete courses.
+- **Filtering:** View courses by day (Mon - Fri).
 
-This project is a starting point for a Flutter application.
+## Screenshots
+### Login Screen
+![Login](screenshots/login.png)
 
-A few resources to get you started if this is your first Flutter project:
+### Timetable
+![Timetable](screenshots/timetable.png)
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+### Cloud Database
+![Firebase](screenshots/firebase.png)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Setup
+1. Clone the repo.
+2. Run `flutter pub get`.
+3. Run `flutter run -d chrome`.

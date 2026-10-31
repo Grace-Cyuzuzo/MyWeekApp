@@ -6,6 +6,7 @@ pluginManagement {
             val flutterSdkPath = properties.getProperty("flutter.sdk")
             require(flutterSdkPath != null) { "flutter.sdk not set in local.properties" }
             flutterSdkPath
+            id("com.google.gms.google-services") version "4.4.4" apply false
         }
 
     includeBuild("$flutterSdkPath/packages/flutter_tools/gradle")
